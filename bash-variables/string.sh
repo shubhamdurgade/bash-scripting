@@ -27,3 +27,16 @@ echo "the revered string of cap :$cpr"
 lr=$(echo $lower | rev)
 
 echo "the revered lower string : $lr"
+
+
+trimmed=$(echo "        hello        " | xargs)
+
+echo "trimmed result : $trimmed"
+
+string="hello from the shubham bash! , this is string used for the remove prefix and suffix"
+
+prefix_rm=${string##*bash!}
+
+echo "prefix remove the bash: $prefix_rm"
+
+
